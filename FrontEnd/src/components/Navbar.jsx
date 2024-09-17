@@ -21,7 +21,7 @@ const Navbar = () => {
           <li><a href="/job-portal">Job Portal</a></li>
           <li><a href="/alumni-diversity">Alumni Diversity</a></li>
           <li><a href="/success-stories">Success Stories</a></li>
-          <li><a href="/event">Events</a></li>
+          <li><a href="/events">Events</a></li>
           <li><a href="/feedbacks-surveys">Feedbacks & Surveys</a></li>
         </ul>
       )}
