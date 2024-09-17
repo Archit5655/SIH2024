@@ -7,11 +7,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-     <h1>GearUp</h1>
+  
+  <div className=''>
+
+
+      <h1 className='  text-xl'>GearUp</h1>
      
-    </>
+    </div>
+
   )
 }
 
-export default App
+export default App;
