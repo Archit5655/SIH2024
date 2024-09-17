@@ -1,14 +1,15 @@
-
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
+
+import Testimonial from "./pages/testimonial"
+
 import Navbar from './components/Navbar'
 import Footer from './components/footer'
 import Home from './pages/home'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Event from "./pages/Event";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
+
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   <>
       <Navbar/>
       <Home/>
-      <Event/>
+      {/* <Event/> */}
       <Footer/>
 
   </>
