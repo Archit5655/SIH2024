@@ -29,13 +29,16 @@ const Navbar = () => {
       {/* Nav Links */}
       <ul className="nav-links">
         <li>
-          <a href="/news">News</a>
+          <a href="/home">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
         </li>
         <li>
           <a href="/events">Events</a>
         </li>
         <li>
-          <a href="/career-page">Career Page</a>
+          <a href="/jobs">Jobs</a>
         </li>
         <li>
           <a href="/contact-us">Contact Us</a>
