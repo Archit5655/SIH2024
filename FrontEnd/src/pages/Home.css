@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* add a gap of 20px between the two divs */
+  }
+  
+  .event-photos {
+    width: 80%;
+    background-color: white; /* adjust the background color as needed */
+    padding:0px; /* adjust the padding as needed */
+    border-radius: 15px; /* increase the corner radius to 15px */
+  }
+  
+  .login-signup {
+    width: 20%;
+    background-color:rgba(255, 255, 255, 0.191); /* adjust the background color as needed */
+    padding: 0px; /* adjust the padding as needed */
+    border-radius: 15px; /* increase the corner radius to 15px */
+  }
+  .connect-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .connect-button:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+  p{
+    font-weight: 700;
+  }
+  .alumnis{
+    margin-top: 100px;
+  }
