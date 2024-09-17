@@ -4,18 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/footer'
+import Home from './pages/home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-  
-    <div>
+  <>
       <Navbar/>
+      <Home/>
       <Footer/>
 
-    </div>
+  </>
     
 
   )

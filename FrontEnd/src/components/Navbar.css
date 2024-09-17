@@ -1,112 +1,119 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(139, 209, 195, 0.659); /* Transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    color: white;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  
+  display: flex;
+  top: 0;
+  margin:0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(139, 209, 195, 0.659);
+  backdrop-filter: blur(10px);
+  color: white;
+  position: Sticky;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-actions input {
+  /* No need to style input elements here */
+}
+
+.nav-actions input::placeholder {
+  color: #666;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu li:hover {
+  background-color: #555;
+}
+
+/* Button Styling */
+.login-btn {
+  background-color: #00FA9A; 
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #32CD32; 
+}
+
+.signup-btn {
+  background-color: #000080; 
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #001f3f; 
+}
+
+/* Media Query for Smaller Screens (Mobile) */
+@media screen and (max-width: 768px) {
+  /* Adjust navbar layout and hide nav links for mobile */
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin-left: 30px; /* Adding space between hamburger and nav links */
+    display: none;
   }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .nav-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .nav-actions input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent input background */
-    color: white;
-  }
-  
-  .nav-actions input::placeholder {
-    color: #ccc;
-  }
-  
-  /* Hamburger icon */
   .hamburger {
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  /* Dropdown styling */
-  .dropdown-menu {
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent dropdown */
-    list-style: none;
-    padding: 10px;
-    margin: 0;
     display: block;
-    z-index: 1000;
-    border-radius: 4px;
   }
   
-  .dropdown-menu li {
-    margin: 5px 0;
-  }
-  
-  .dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .dropdown-menu li a:hover {
-    text-decoration: underline;
-  }
-  
-  .dropdown-menu li:hover {
-    background-color: #555;
-  }
-  
-  /* Button Styling */
-  .login-btn {
-    background-color: #00FA9A; /* Aqua green */
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-btn:hover {
-    background-color: #32CD32; /* Darker shade of aqua green */
-  }
-  
-  .signup-btn {
-    background-color: #000080; /* Navy blue */
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .signup-btn:hover {
-    background-color: #001f3f; /* Darker shade of navy blue */
-  }
-  
+}
